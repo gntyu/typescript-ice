@@ -14,5 +14,11 @@
         ]
       }
     ]
-  ]
+  ],
+  "proxy": {
+    "/**": {
+      "enable": true,
+      "target": "http://localhost:7001"
+    }
+  }
 }
