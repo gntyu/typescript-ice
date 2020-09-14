@@ -17,12 +17,12 @@ const asideMenuConfig = [
   {
     name: '系统列表',
     path: '/syslist',
-    icon: 'smile',
+    icon: 'set',
   },
   {
     name: '活动',
     path: '/dynamic',
-    icon: 'smile',
+    icon: 'chart-bar',
   },
 ];
 
