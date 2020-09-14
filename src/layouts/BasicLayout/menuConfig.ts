@@ -10,13 +10,13 @@ const headerMenuConfig = [];
 
 const asideMenuConfig = [
   {
-    name: 'Dashboard',
+    name: 'API列表',
     path: '/',
     icon: 'smile',
   },
   {
-    name: 'API列表',
-    path: '/apilist',
+    name: '系统列表',
+    path: '/syslist',
     icon: 'smile',
   },
 ];

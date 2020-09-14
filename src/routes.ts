@@ -7,8 +7,8 @@
  * @FilePath: /tsice/src/routes.ts
  */
 import BasicLayout from '@/layouts/BasicLayout';
-import Dashboard from '@/pages/Dashboard';
 import Apilist from '@/pages/Apilist';
+import Syslist from '@/pages/Syslist';
 
 
 const routerConfig = [
@@ -16,8 +16,8 @@ const routerConfig = [
     path: '/',
     component: BasicLayout,
     children: [
-      { path: '/apilist', component: Apilist },
-      { path: '/', exact: true, component: Dashboard },
+      { path: '/', exact: true, component: Apilist },
+      { path: '/syslist',component: Syslist },
     ],
   },
 ];
