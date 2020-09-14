@@ -1,6 +1,5 @@
 import React, { useEffect, useCallback } from 'react';
 import { Dialog,Form,Field ,Input,Select, Radio} from '@alifd/next';
-import { DialogProps } from '@alifd/next/types/dialog';
 const FormItem = Form.Item;
 
 const formItemLayout = {
@@ -34,6 +33,7 @@ const DialogOperation: React.FC = (props) => {
   const { actionType, dataSource, onOk = () => { },syslist, ...lastProps } = props;
 
   const field = Field.useField([]);
+
   useEffect(() => {
     field.reset();
     if (dataSource) {
@@ -52,17 +52,18 @@ const DialogOperation: React.FC = (props) => {
 
   const handleOk = useCallback(() => {
     if (actionType === 'preview') {
-      return onOk(null);
+      onOk(null);
     } else {
       field.validate((error, values) => { 
-        if(error===null)return onOk(field.getValues(),actionType === 'edit'?'updateapi':'addapi');
+        if (error === null) {
+          onOk(field.getValues(), actionType === 'edit' ? 'updateapi' : 'addapi');
+        }
       });
     }
-    
   }, [actionType, onOk])
 
   const isPreview = actionType === 'preview';
-
+  
   return (
     <Dialog
       shouldUpdatePosition
