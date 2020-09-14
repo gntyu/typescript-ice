@@ -131,7 +131,7 @@ const DialogOperation: React.FC = (props) => {
           required={!isPreview}
         >
           <Input.TextArea
-            rows={6}
+            rows={10}
             name="result"
           />
         </FormItem>

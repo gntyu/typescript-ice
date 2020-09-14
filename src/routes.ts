@@ -9,6 +9,7 @@
 import BasicLayout from '@/layouts/BasicLayout';
 import Apilist from '@/pages/Apilist';
 import Syslist from '@/pages/Syslist';
+import Dynamic from '@/pages/Dynamic';
 
 
 const routerConfig = [
@@ -18,6 +19,7 @@ const routerConfig = [
     children: [
       { path: '/', exact: true, component: Apilist },
       { path: '/syslist',component: Syslist },
+      { path: '/dynamic',component: Dynamic },
     ],
   },
 ];

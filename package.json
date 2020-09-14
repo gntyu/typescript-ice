@@ -7,6 +7,7 @@
     "@alifd/theme-design-pro": "^0.x",
     "ahooks": "^2.6.0",
     "axios": "^0.20.0",
+    "echarts": "^4.9.0",
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
     "react": "^16.4.1",

@@ -19,6 +19,11 @@ const asideMenuConfig = [
     path: '/syslist',
     icon: 'smile',
   },
+  {
+    name: '活动',
+    path: '/dynamic',
+    icon: 'smile',
+  },
 ];
 
 export { headerMenuConfig, asideMenuConfig };
