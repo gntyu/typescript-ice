@@ -1,12 +1,9 @@
 import React from 'react';
 import echarts from 'echarts/lib/echarts';
-import Chart from './Chart';
-
-
+// import Chart from './Chart';
+import Echart from './Echart';
 
 const WholeDay: React.SFC = (props) => {
-
-  console.log('props', props)
 
   
   let option = {};
@@ -126,7 +123,7 @@ const WholeDay: React.SFC = (props) => {
 
   return (
     <div>
-      <Chart option={option} height={400} />
+      <Echart option={option} height={400} />
     </div>
   );
 

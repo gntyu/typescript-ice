@@ -1,7 +1,5 @@
 import React from 'react';
-import Chart from './Chart';
-
-
+import Echart from './Echart';
 
 const System: React.SFC = (props) => {
 
@@ -121,9 +119,12 @@ const System: React.SFC = (props) => {
       }]
     };
   }
+
+
   return (
     <div>
-      <Chart option={option} height={400} />
+      {/* <Chart option={option} height={400} /> */}
+      <Echart option={option} height={400} />
     </div>
 
   );

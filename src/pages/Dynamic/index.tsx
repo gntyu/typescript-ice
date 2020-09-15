@@ -15,7 +15,6 @@ const Dynamic: SFC = () => {
       const recent = await axios.get("/lyapi/recent");
       const tops = await axios.get("/lyapi/tops");
       const system = await axios.get("/lyapi/system");
-      console.log('today',today)
       setData({
         today:today.data.data,
         month:month.data.data,
@@ -51,10 +50,10 @@ const Dynamic: SFC = () => {
           <h2>接口使用类型</h2>
           <Tab shape="text" >
             <Tab.Item title="系统汇总" key="a">
-              <System data={data.system&&data.system.list} sys={data.system&&data.system.list} />
+              <System data={data.system&&data.system.list} sys={data.system&&data.system.list} title="系统汇总" />
             </Tab.Item>
             <Tab.Item title="TOP20" key="b">
-              <System data={data.tops&&data.tops.list} sys={data.system&&data.system.list} />
+              <System data={data.tops&&data.tops.list} sys={data.system&&data.system.list} title="TOP20" />
             </Tab.Item>
           </Tab>
         </Card.Content>
