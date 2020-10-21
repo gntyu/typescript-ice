@@ -137,6 +137,13 @@ const Apilist: SFC = () => {
   }
 
   const handleOk = (data: {}, type: string) => {
+    // console.log(data)
+    try {
+      JSON.parse(data['result']);
+    } catch(e) {
+      Message.error('格式不正确！');
+      return ;
+    }
     const submit = async () => {
       const res = await axios.post(`/lyapi/${type}`, data);
       if (res.data.errorCode === 0) {
