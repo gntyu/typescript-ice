@@ -43,7 +43,7 @@ const DialogOperation: React.FC = (props) => {
         syscode:dataSource.syscode,
         method:dataSource.method,
         path:dataSource.path,
-        desc:dataSource.desc,
+        desc:dataSource.desc||dataSource.path,
         result:dataSource.result,
       }
       field.setValues(values);
